@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Max Value and Position</title>
+  <script>
+    function findMaxValueAndPosition() {
+      var integerArray = [15, 7, 25, 12, 8, 18, 30, 5, 22, 10];
+
+      // Tìm giá trị lớn nhất và vị trí của nó
+      var maxValue = integerArray[0];
+      var maxIndex = 0;
+
+      for (var i = 1; i < integerArray.length; i++) {
+        if (integerArray[i] > maxValue) {
+          maxValue = integerArray[i];
+          maxIndex = i;
+        }
+      }
+      alert('Giá trị lớn nhất trong mảng là ' + maxValue + ' tại vị trí ' + maxIndex);
+    }
+  </script>
+</head>
+<body>
+
+<h1>Max Value and Position</h1>
+
+<button onclick="findMaxValueAndPosition()">Tìm giá trị lớn nhất và vị trí</button>
+
+</body>
+</html>
