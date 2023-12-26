@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Max and Average of an Array</title>
+</head>
+<body>
+
+<script>
+  // Khởi tạo mảng số nguyên
+  var numbers = [10, 5, 8, 12, 3, 7];
+
+  // Tìm giá trị lớn nhất trong mảng
+  var maxNumber = Math.max(...numbers);
+
+  // Tính giá trị trung bình của mảng
+  var average = numbers.reduce(function (sum, num) {
+    return sum + num;
+  }, 0) / numbers.length;
+
+  // Hiển thị kết quả
+  document.write("<p>Mảng số nguyên: " + numbers.join(', ') + "</p>");
+  document.write("<p>Giá trị lớn nhất trong mảng: " + maxNumber + "</p>");
+  document.write("<p>Giá trị trung bình của mảng: " + average + "</p>");
+</script>
+
+</body>
+</html>
